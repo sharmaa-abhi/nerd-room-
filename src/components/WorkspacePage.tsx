@@ -206,7 +206,11 @@ export const WorkspacePage: React.FC<WorkspacePageProps> = ({ onRegisterClick })
 
         <main className="workspace-content">
           <section id="overview" className="workspace-page-header reveal-on-scroll is-visible">
-            <div className="workspace-page-icon">✦</div>
+            <div className="workspace-collab-mark" aria-label="Notion and Nerds Room collaboration">
+              <span className="workspace-collab-mark__notion">N</span>
+              <span className="workspace-collab-mark__join" aria-hidden="true">×</span>
+              <img src="/assets/nerds-room-wordmark.png" alt="Nerds Room" />
+            </div>
             <div className="workspace-eyebrow">EVENT PAGE · 27 NOV 2026</div>
             <h1>Notion Unlocked × Nerds Room</h1>
             <p className="workspace-page-subtitle">Learn. Build. Organize.</p>
@@ -365,21 +369,38 @@ export const WorkspacePage: React.FC<WorkspacePageProps> = ({ onRegisterClick })
                 <p className="workspace-prose">The people making this community workspace possible.</p>
               </div>
             </div>
-            <a
-              className="workspace-speaker-banner"
-              href="https://www.linkedin.com/in/priyanksingh1993/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="View Priyank Singh on LinkedIn"
-            >
-              <div className="workspace-speaker-avatar" aria-hidden="true">PS</div>
-              <div className="workspace-speaker-copy">
-                <p className="workspace-kicker">Featured speaker</p>
-                <h3>Priyank Singh</h3>
-                <p>SaaS · AI · Growth Marketing · Product Strategy</p>
-              </div>
-              <span className="workspace-speaker-note">GrowthX · Ex-Beatoven.ai & Mercer Mettl</span>
-            </a>
+            <div className="workspace-speakers">
+              <a
+                className="workspace-speaker-banner"
+                href="https://www.linkedin.com/in/priyanksingh1993/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Priyank Singh on LinkedIn"
+              >
+                <div className="workspace-speaker-avatar" aria-hidden="true">PS</div>
+                <div className="workspace-speaker-copy">
+                  <p className="workspace-kicker">Featured speaker</p>
+                  <h3>Priyank Singh</h3>
+                  <p>SaaS · AI · Growth Marketing · Product Strategy</p>
+                </div>
+                <span className="workspace-speaker-note">GrowthX · Ex-Beatoven.ai & Mercer Mettl</span>
+              </a>
+              <a
+                className="workspace-speaker-banner"
+                href="https://www.linkedin.com/in/shashank-pandey-stack"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Shashank Pandey on LinkedIn"
+              >
+                <div className="workspace-speaker-avatar" aria-hidden="true">SP</div>
+                <div className="workspace-speaker-copy">
+                  <p className="workspace-kicker">Featured speaker</p>
+                  <h3>Shashank Pandey</h3>
+                  <p>Speaker profile on LinkedIn</p>
+                </div>
+                <span className="workspace-speaker-note">View profile</span>
+              </a>
+            </div>
             <div className="workspace-people">
               {EVENT_DATA.community.organizers.map((organizer) => (
                 <div className="workspace-person" key={organizer.name}>

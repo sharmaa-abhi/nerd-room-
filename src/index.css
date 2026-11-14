@@ -399,6 +399,46 @@ button {
   font-size: 28px;
 }
 
+.workspace-collab-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  min-height: 78px;
+  margin-bottom: 26px;
+  padding: 11px 22px 11px 12px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+  box-shadow: 0 8px 20px rgba(13, 13, 13, 0.06);
+}
+
+.workspace-collab-mark__notion {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border: 3px solid var(--ink);
+  border-radius: 11px;
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: Georgia, serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.workspace-collab-mark__join {
+  color: var(--stone);
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.workspace-collab-mark img {
+  display: block;
+  width: 165px;
+  height: auto;
+}
+
 .workspace-eyebrow {
   margin: 0 0 12px;
   color: var(--blue);
@@ -877,6 +917,23 @@ button {
   transform: translateY(-2px);
 }
 
+.workspace-speakers {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 30px 0 18px;
+}
+
+.workspace-speakers .workspace-speaker-banner {
+  margin: 0;
+  min-width: 0;
+  padding: 16px;
+}
+
+.workspace-speakers .workspace-speaker-note {
+  display: none;
+}
+
 .workspace-speaker-avatar {
   display: grid;
   flex: 0 0 auto;
@@ -1160,6 +1217,29 @@ button {
     font-size: 40px;
   }
 
+  .workspace-collab-mark {
+    gap: 11px;
+    min-height: 62px;
+    margin-bottom: 20px;
+    padding: 8px 14px 8px 9px;
+  }
+
+  .workspace-collab-mark__notion {
+    width: 44px;
+    height: 44px;
+    border-width: 2px;
+    border-radius: 9px;
+    font-size: 30px;
+  }
+
+  .workspace-collab-mark__join {
+    font-size: 20px;
+  }
+
+  .workspace-collab-mark img {
+    width: 125px;
+  }
+
   .workspace-page-subtitle {
     font-size: 19px;
   }
@@ -1186,6 +1266,10 @@ button {
   .workspace-speaker-banner {
     align-items: flex-start;
     flex-wrap: wrap;
+  }
+
+  .workspace-speakers {
+    grid-template-columns: 1fr;
   }
 
   .workspace-speaker-note {
