@@ -159,9 +159,12 @@ export const WorkspacePage: React.FC<WorkspacePageProps> = ({ onRegisterClick })
         <header className="workspace-topbar">
           <div className="flex min-w-0 items-center gap-2">
             <a href="#overview" className="workspace-brand">
-              <span className="workspace-brand__icon">✦</span>
+              <img
+                src="/assets/nerds-room-wordmark.png"
+                alt="Nerds Room"
+                className="workspace-brand__logo"
+              />
               <span>
-                <strong>Nerds Room</strong>
                 <small>Notion Unlocked</small>
               </span>
             </a>
