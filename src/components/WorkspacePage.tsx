@@ -365,6 +365,21 @@ export const WorkspacePage: React.FC<WorkspacePageProps> = ({ onRegisterClick })
                 <p className="workspace-prose">The people making this community workspace possible.</p>
               </div>
             </div>
+            <a
+              className="workspace-speaker-banner"
+              href="https://www.linkedin.com/in/priyanksingh1993/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View Priyank Singh on LinkedIn"
+            >
+              <div className="workspace-speaker-avatar" aria-hidden="true">PS</div>
+              <div className="workspace-speaker-copy">
+                <p className="workspace-kicker">Featured speaker</p>
+                <h3>Priyank Singh</h3>
+                <p>SaaS · AI · Growth Marketing · Product Strategy</p>
+              </div>
+              <span className="workspace-speaker-note">GrowthX · Ex-Beatoven.ai & Mercer Mettl</span>
+            </a>
             <div className="workspace-people">
               {EVENT_DATA.community.organizers.map((organizer) => (
                 <div className="workspace-person" key={organizer.name}>
