@@ -101,7 +101,7 @@ button {
 
 .workspace-brand__logo {
   display: block;
-  width: 112px;
+  width: 150px;
   height: auto;
   object-fit: contain;
 }
@@ -442,12 +442,31 @@ button {
 }
 
 .workspace-hero-banner {
+  position: relative;
   margin: 0 0 34px;
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: 12px;
   background: var(--surface);
   box-shadow: 0 14px 32px rgba(13, 13, 13, 0.08);
+}
+
+.workspace-hero-banner__brand {
+  position: absolute;
+  top: 24px;
+  left: 28px;
+  z-index: 1;
+  padding: 10px 14px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 5px 16px rgba(13, 13, 13, 0.1);
+}
+
+.workspace-hero-banner__brand img {
+  display: block;
+  width: 130px;
+  height: auto;
 }
 
 .workspace-hero-banner img {
@@ -1051,7 +1070,7 @@ button {
   }
 
   .workspace-brand__logo {
-    width: 104px;
+    width: 130px;
   }
 
   .workspace-topnav {
@@ -1113,6 +1132,16 @@ button {
 
   .agenda-journey {
     margin-top: 88px;
+  }
+
+  .workspace-hero-banner__brand {
+    top: 12px;
+    left: 12px;
+    padding: 7px 9px;
+  }
+
+  .workspace-hero-banner__brand img {
+    width: 98px;
   }
 
   .agenda-journey__line {
