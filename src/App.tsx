@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { Sparkles, X } from 'lucide-react';
 import { WorkspacePage } from './components/WorkspacePage';
 
@@ -27,6 +28,7 @@ export function App() {
           </button>
         </div>
       )}
+      <Analytics />
     </>
   );
 }
