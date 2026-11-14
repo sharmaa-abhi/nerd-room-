@@ -96,7 +96,7 @@ button {
   display: flex;
   min-width: 0;
   align-items: center;
-  gap: 10px;
+  gap: 11px;
 }
 
 .workspace-brand__icon,
@@ -123,14 +123,17 @@ button {
 }
 
 .workspace-brand strong {
-  font-size: 13px;
-  font-weight: 600;
+  color: var(--charcoal);
+  font-size: 14px;
+  font-weight: 650;
+  letter-spacing: -0.01em;
 }
 
 .workspace-brand small {
-  margin-top: 2px;
+  margin-top: 3px;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 10px;
+  letter-spacing: 0.01em;
 }
 
 .workspace-icon-button {
@@ -311,6 +314,9 @@ button {
   align-items: center;
   gap: 7px;
   min-width: 0;
+  margin-left: 8px;
+  padding-left: 16px;
+  border-left: 1px solid var(--border);
   color: var(--muted);
   font-size: 13px;
 }
@@ -558,6 +564,7 @@ button {
   display: flex;
   align-items: center;
   gap: 8px;
+  margin-left: auto;
   color: var(--muted);
   font-size: 12px;
 }
