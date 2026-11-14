@@ -225,22 +225,22 @@ button {
   align-items: center;
   justify-content: space-between;
   width: min(calc(100% - 32px), 1120px);
-  min-height: 64px;
-  margin-top: 16px;
-  padding: 10px 14px;
-  border-bottom: 1px solid var(--border-soft);
+  min-height: 68px;
+  margin-top: 18px;
+  padding: 10px 14px 10px 16px;
   border: 1px solid var(--border);
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.94);
-  backdrop-filter: blur(8px);
-  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.08);
+  border-top: 2px solid rgba(0, 117, 222, 0.28);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 12px 34px rgba(13, 13, 13, 0.1);
   transform: translateX(-50%);
   transition: box-shadow 180ms ease, background 180ms ease;
 }
 
 .workspace-topbar:hover {
-  background: rgba(255, 255, 255, 0.98);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.11);
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.13);
 }
 
 .workspace-topbar__actions {
@@ -251,16 +251,17 @@ button {
 
 .workspace-topnav {
   position: absolute;
-  top: calc(100% + 10px);
+  top: calc(100% + 12px);
   left: 50%;
   display: flex;
   align-items: center;
-  gap: 3px;
-  padding: 6px;
+  gap: 4px;
+  padding: 7px;
   border: 1px solid var(--border);
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.98);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.14);
   opacity: 0;
   pointer-events: none;
   transform: translate(-50%, -6px);
@@ -277,8 +278,8 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  padding: 8px 11px;
-  border-radius: 7px;
+  padding: 9px 12px;
+  border-radius: 8px;
   color: var(--muted);
   font-size: 13px;
   white-space: nowrap;
@@ -291,6 +292,18 @@ button {
 
 .workspace-menu-button {
   display: inline-flex;
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--blue);
+  border-radius: 9px;
+  background: var(--canvas);
+  color: var(--charcoal);
+}
+
+.workspace-menu-button:hover {
+  border-color: var(--blue);
+  background: var(--blue-soft);
+  color: var(--blue);
 }
 
 .workspace-breadcrumb {
@@ -326,9 +339,10 @@ button {
 }
 
 .workspace-button--compact {
-  min-height: 34px;
-  padding: 7px 12px;
+  min-height: 40px;
+  padding: 8px 14px;
   font-size: 13px;
+  font-weight: 600;
 }
 
 .workspace-button--primary {
@@ -1005,7 +1019,24 @@ button {
 
   .workspace-topbar {
     margin-top: 10px;
-    padding: 8px 10px;
+    width: calc(100% - 20px);
+    min-height: 60px;
+    padding: 8px 9px 8px 11px;
+  }
+
+  .workspace-topbar__actions {
+    gap: 5px;
+  }
+
+  .workspace-menu-button {
+    width: 36px;
+    height: 36px;
+  }
+
+  .workspace-button--compact {
+    min-height: 36px;
+    padding: 7px 10px;
+    font-size: 12px;
   }
 
   .workspace-brand small,
